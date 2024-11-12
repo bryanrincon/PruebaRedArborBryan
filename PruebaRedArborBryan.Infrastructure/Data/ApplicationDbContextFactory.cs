@@ -13,7 +13,6 @@ namespace PruebaRedArborBryan.Infrastructure.Data
     {
         public ApplicationDbContext CreateDbContext(string[] args)
         {
-            // Configura el builder para obtener la cadena de conexión
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())

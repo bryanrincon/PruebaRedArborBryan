@@ -47,7 +47,6 @@ namespace PruebaRedArborBryan.Api.Controllers
             return CreatedAtAction(nameof(GetEmployeeById), new { id = employeeId }, employeeId);
         }
 
-        // PUT: api/employees/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateEmployeeCommand command)
         {
@@ -58,7 +57,6 @@ namespace PruebaRedArborBryan.Api.Controllers
             return NoContent();
         }
 
-        // DELETE: api/employees/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {

@@ -43,7 +43,7 @@ namespace PruebaRedArborBryan.Infrastructure.Repository
                 new { Username = username, Password = password }
             );
 
-            return employee; // Retorna null si no hay coincidencia
+            return employee;
         }
     }
 }

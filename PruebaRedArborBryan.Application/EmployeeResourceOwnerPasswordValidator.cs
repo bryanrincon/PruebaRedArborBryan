@@ -45,7 +45,6 @@ namespace PruebaRedArborBryan.Application
             }
             else
             {
-                // Autenticación fallida
                 context.Result = new GrantValidationResult(TokenRequestErrors.InvalidGrant, "Invalid credentials");
             }
         }

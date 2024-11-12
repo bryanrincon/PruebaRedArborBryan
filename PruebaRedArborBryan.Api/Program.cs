@@ -15,9 +15,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-// Añadir MediatR al contenedor de servicios
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateEmployeeCommandHandler).Assembly));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(UpdateEmployeeCommandHandler).Assembly));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(DeleteEmployeeCommandHandler).Assembly));
@@ -25,16 +22,11 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Delet
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetAllEmployeesQueryHandler).Assembly));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetEmployeeByIdQueryHandler).Assembly));
 
-// Lee la cadena de conexión desde appsettings.json
 var connectionString = builder.Configuration.GetConnectionString("DefaultReadConnection");
 
-// Configurar el contexto de la base de datos para Entity Framework (si lo estás usando)
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultWriteConnection")));
 
-
-
-// Inyección de dependencias para los repositorios
 builder.Services.AddScoped<IEmployeeReadRepository, EmployeeReadRepository>(provider => new EmployeeReadRepository(connectionString));
 builder.Services.AddScoped<IEmployeeWriteRepository, EmployeeWriteRepository>();
 builder.Services.AddScoped<IResourceOwnerPasswordValidator, EmployeeResourceOwnerPasswordValidator>();
