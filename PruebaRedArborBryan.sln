@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DCA3D32F-E238-45EE-94C7-B42B121E07AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaRedArborBryan.Domain", "PruebaRedArborBryan.Domain\PruebaRedArborBryan.Domain.csproj", "{10546397-3E20-49EE-85B7-0635B3F87292}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{21D3C78F-8C99-4216-8DD7-1706830C250C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaRedArborBryan.Application", "PruebaRedArborBryan.Application\PruebaRedArborBryan.Application.csproj", "{380C8E53-0028-4E90-8435-4AF7DD84225A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D8F5B426-0415-429D-A69E-C05AF3CF38B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaRedArborBryan.Infrastructure", "PruebaRedArborBryan.Infrastructure\PruebaRedArborBryan.Infrastructure.csproj", "{9BDCF7DD-DCBA-4F40-A151-64A770A8A5B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{32586F0F-FA22-4CAD-AD25-AFEA4800DCCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaRedArborBryan.Api", "PruebaRedArborBryan.Api\PruebaRedArborBryan.Api.csproj", "{A4105E2A-463C-4DAC-8D51-25EB085808FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{E6A62F9E-0BFC-4F79-BC20-2594B6447A1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaRedArborBryan.Tests", "PruebaRedArborBryan.Tests\PruebaRedArborBryan.Tests.csproj", "{39967005-1686-4A89-A72A-584F1BB1FE4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10546397-3E20-49EE-85B7-0635B3F87292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10546397-3E20-49EE-85B7-0635B3F87292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10546397-3E20-49EE-85B7-0635B3F87292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10546397-3E20-49EE-85B7-0635B3F87292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380C8E53-0028-4E90-8435-4AF7DD84225A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380C8E53-0028-4E90-8435-4AF7DD84225A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380C8E53-0028-4E90-8435-4AF7DD84225A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380C8E53-0028-4E90-8435-4AF7DD84225A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDCF7DD-DCBA-4F40-A151-64A770A8A5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDCF7DD-DCBA-4F40-A151-64A770A8A5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDCF7DD-DCBA-4F40-A151-64A770A8A5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDCF7DD-DCBA-4F40-A151-64A770A8A5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4105E2A-463C-4DAC-8D51-25EB085808FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4105E2A-463C-4DAC-8D51-25EB085808FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4105E2A-463C-4DAC-8D51-25EB085808FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4105E2A-463C-4DAC-8D51-25EB085808FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39967005-1686-4A89-A72A-584F1BB1FE4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39967005-1686-4A89-A72A-584F1BB1FE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39967005-1686-4A89-A72A-584F1BB1FE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39967005-1686-4A89-A72A-584F1BB1FE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10546397-3E20-49EE-85B7-0635B3F87292} = {DCA3D32F-E238-45EE-94C7-B42B121E07AD}
+		{380C8E53-0028-4E90-8435-4AF7DD84225A} = {21D3C78F-8C99-4216-8DD7-1706830C250C}
+		{9BDCF7DD-DCBA-4F40-A151-64A770A8A5B4} = {D8F5B426-0415-429D-A69E-C05AF3CF38B3}
+		{A4105E2A-463C-4DAC-8D51-25EB085808FA} = {32586F0F-FA22-4CAD-AD25-AFEA4800DCCF}
+		{39967005-1686-4A89-A72A-584F1BB1FE4B} = {E6A62F9E-0BFC-4F79-BC20-2594B6447A1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE5B24C3-CDF0-422C-B4B2-A6BD17D36C89}
+	EndGlobalSection
+EndGlobal
